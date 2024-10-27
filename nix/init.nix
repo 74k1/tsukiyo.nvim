@@ -48,7 +48,12 @@
           LineNr = { fg = colors.base03 },
           Search = { fg = colors.base00, bg = colors.base0A },
           IncSearch = { fg = colors.base00, bg = colors.base0A },
-          -- Add more core highlights here
+          
+          -- Status Line
+          StatusLine = { fg = colors.base05, bg = colors.base02 },
+          StatusLineNC = { fg = colors.base04, bg = colors.base01 },
+          
+          -- Additional core highlights here
       }
 
       -- Load plugin highlights
