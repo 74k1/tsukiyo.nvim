@@ -1,21 +1,21 @@
 return function(c, bg)
     return {
         -- Borders
-        TelescopeBorder = { fg = c.base0D, bg = bg },
-        TelescopePromptBorder = { fg = c.base0D, bg = c.base01 },
-        TelescopeResultsBorder = { fg = c.base0D, bg = bg },
-        TelescopePreviewBorder = { fg = c.base0D, bg = bg },
+        TelescopeBorder = { fg = c.base0D, bg = c.base10 },
+        TelescopePromptBorder = { fg = c.base0D, bg = c.base11 },
+        TelescopeResultsBorder = { fg = c.base0D, bg = c.base10 },
+        TelescopePreviewBorder = { fg = c.base0D, bg = c.base10 },
         
         -- Normal text
-        TelescopeNormal = { fg = c.base05, bg = bg },
-        TelescopePromptNormal = { fg = c.base05, bg = c.base01 },
-        TelescopeResultsNormal = { fg = c.base05, bg = bg },
-        TelescopePreviewNormal = { fg = c.base05, bg = bg },
+        TelescopeNormal = { fg = c.base05, bg = c.base10 },
+        TelescopePromptNormal = { fg = c.base05, bg = c.base11 },
+        TelescopeResultsNormal = { fg = c.base05, bg = c.base10 },
+        TelescopePreviewNormal = { fg = c.base05, bg = c.base10 },
         
         -- Selection
-        TelescopeSelection = { fg = c.base05, bg = c.base02 },
-        TelescopeSelectionCaret = { fg = c.base0D, bg = c.base02 },
-        TelescopeMultiSelection = { fg = c.base0E, bg = c.base02 },
+        TelescopeSelection = { fg = c.base15, bg = c.base02 },
+        TelescopeSelectionCaret = { fg = c.base15, bg = c.base02 },
+        TelescopeMultiSelection = { fg = c.base17, bg = c.base02 },
         
         -- Prompts
         TelescopePromptPrefix = { fg = c.base08 },

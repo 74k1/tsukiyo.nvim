@@ -13,9 +13,9 @@ return function(c, bg)
         ["@punctuation.special"] = { fg = c.base0F },
         
         -- Literals
-        ["@string"] = { fg = c.base0B },
-        ["@string.regex"] = { fg = c.base0C },
-        ["@string.escape"] = { fg = c.base0C },
+        ["@string"] = { fg = c.base14 },
+        ["@string.regex"] = { fg = c.base15 },
+        ["@string.escape"] = { fg = c.base15 },
         ["@string.special"] = { fg = c.base0C },
         
         ["@character"] = { fg = c.base0B },
@@ -26,22 +26,22 @@ return function(c, bg)
         ["@float"] = { fg = c.base09 },
         
         -- Functions
-        ["@function"] = { fg = c.base0D },
-        ["@function.builtin"] = { fg = c.base0D },
-        ["@function.call"] = { fg = c.base0D },
+        ["@function"] = { fg = c.base15 },
+        ["@function.builtin"] = { fg = c.base15 },
+        ["@function.call"] = { fg = c.base15 },
         ["@function.macro"] = { fg = c.base08 },
         
-        ["@method"] = { fg = c.base0D },
-        ["@method.call"] = { fg = c.base0D },
+        ["@method"] = { fg = c.base15 },
+        ["@method.call"] = { fg = c.base15 },
         
         ["@constructor"] = { fg = c.base0C },
         ["@parameter"] = { fg = c.base08, italic = true },
         
         -- Keywords
-        ["@keyword"] = { fg = c.base0E },
-        ["@keyword.function"] = { fg = c.base0E },
-        ["@keyword.operator"] = { fg = c.base0E },
-        ["@keyword.return"] = { fg = c.base0E },
+        ["@keyword"] = { fg = c.base17 },
+        ["@keyword.function"] = { fg = c.base17 },
+        ["@keyword.operator"] = { fg = c.base17 },
+        ["@keyword.return"] = { fg = c.base17 },
         
         ["@conditional"] = { fg = c.base0E },
         ["@repeat"] = { fg = c.base0E },
@@ -51,8 +51,8 @@ return function(c, bg)
         ["@exception"] = { fg = c.base08 },
         
         -- Types
-        ["@type"] = { fg = c.base0A },
-        ["@type.builtin"] = { fg = c.base0A },
+        ["@type"] = { fg = c.base13 },
+        ["@type.builtin"] = { fg = c.base13 },
         ["@type.qualifier"] = { fg = c.base0A },
         ["@type.definition"] = { fg = c.base0A },
         
@@ -63,10 +63,10 @@ return function(c, bg)
         
         -- Identifiers
         ["@variable"] = { fg = c.base05 },
-        ["@variable.builtin"] = { fg = c.base09 },
+        ["@variable.builtin"] = { fg = c.base12 },
         
-        ["@constant"] = { fg = c.base09 },
-        ["@constant.builtin"] = { fg = c.base09 },
+        ["@constant"] = { fg = c.base12 },
+        ["@constant.builtin"] = { fg = c.base12 },
         ["@constant.macro"] = { fg = c.base09 },
         
         ["@namespace"] = { fg = c.base08 },

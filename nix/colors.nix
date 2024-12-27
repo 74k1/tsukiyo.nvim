@@ -1,37 +1,37 @@
 {
   colors = {
-    # Base24 structure
-    base00 = "#090613"; # Default Background
-    base01 = "#1a1320"; # Lighter Background (Used for status bars, line number and folding marks)
-    base02 = "#2b2030"; # Selection Background
-    base03 = "#3c2d40"; # Comments, Invisible, Line Highlighting
-    base04 = "#4d3a50"; # Dark Foreground (Used for status bars)
-    base05 = "#eff0eb"; # Default Foreground, Caret, Delimiters, Operators
-    base06 = "#f1f1f0"; # Light Foreground (Not often used)
-    base07 = "#f1f1f0"; # Light Background (Not often used)
-    base08 = "#ff5487"; # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
-    base09 = "#ff6593"; # Integers, Boolean, Constants, XML Attributes, Markup Link Url
-    base0A = "#ffda6a"; # Classes, Markup Bold, Search Text Background
-    base0B = "#54ff80"; # Strings, Inherited Class, Markup Code, Diff Inserted
-    base0C = "#4ccefe"; # Support, Regular Expressions, Escape Characters, Markup Quotes
-    base0D = "#6682ff"; # Functions, Methods, Attribute IDs, Headings
-    base0E = "#eb6aff"; # Keywords, Storage, Selector, Markup Italic, Diff Changed
-    base0F = "#f08eff"; # Deprecated, Opening/Closing Embedded Language Tags
+    # Base24 (https://github.com/tinted-theming/base24/blob/main/styling.md)
 
-    # Additional Base24 colors (16-23)
-    base10 = "#77ff9a"; # Lighter green
-    base11 = "#ffe188"; # Lighter yellow
-    base12 = "#8399ff"; # Lighter blue
-    base13 = "#f08eff"; # Lighter magenta
-    base14 = "#74d9fe"; # Lighter cyan
-    base15 = "#f1f1f0"; # Lighter white
-    base16 = "#1a1320"; # Dark gradient 1
-    base17 = "#2b2030"; # Dark gradient 2
-    base18 = "#3c2d40"; # Dark gradient 3
-    base19 = "#4d3a50"; # Dark gradient 4
-    base20 = "#5e4760"; # Dark gradient 5
-    base21 = "#6f5470"; # Dark gradient 6
-    base22 = "#806180"; # Dark gradient 7
-    base23 = "#916e90"; # Dark gradient 8
+    # Dark theme - base00 to base07 go dark to light
+    base00 = "#0a0711";  # Default Background
+    base01 = "#1b1822";  # Lighter Background (Status bars)
+    base02 = "#2c2933";  # Selection Background
+    base03 = "#3d3a44";  # Comments, Invisibles
+    base04 = "#4e4b55";  # Dark Foreground (Status bars)
+    base05 = "#eff0eb";  # Default Foreground
+    base06 = "#f1f1f0";  # Light Foreground
+    base07 = "#f1f1f0";  # Light Background
+
+    # Regular colors
+    base08 = "#ff5487";  # Bright Red (Variables, XML Tags)
+    base09 = "#ff8a47";  # Lush Orange (Constants, XML Attributes)
+    base0A = "#ffda6a";  # Rich Yellow (Classes, Markup Bold)
+    base0B = "#7fff8d";  # Soft Green (Strings)
+    base0C = "#4ccefe";  # Bright Cyan
+    base0D = "#5497ff";  # Pale Blue (Functions, Methods)
+    base0E = "#ba7aff";  # Subtle Purple (Keywords, Storage)
+    base0F = "#816bff";  # Cool Indigo for Deprecated elements
+
+    # Shadows darker than base00
+    base10 = "#08060e";  # Darker Background
+    base11 = "#050307";  # Darkest Background
+
+    # Bright colors (Adjusted for higher luminosity and softness)
+    base12 = "#ff7fa2";  # Soft Bright Red
+    base13 = "#ffe294";  # Soft Yellow
+    base14 = "#9ef2ae";  # Light Green
+    base15 = "#83dfff";  # Bright Cyan
+    base16 = "#a3bcff";  # Icy Blue
+    base17 = "#e6b3ff";  # Pastel Purple
   };
 }
