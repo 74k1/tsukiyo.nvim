@@ -13,9 +13,9 @@ return function(c, bg)
         TelescopePreviewNormal = { fg = c.base05, bg = c.base10 },
         
         -- Selection
-        TelescopeSelection = { fg = c.base15, bg = c.base02 },
-        TelescopeSelectionCaret = { fg = c.base15, bg = c.base02 },
-        TelescopeMultiSelection = { fg = c.base17, bg = c.base02 },
+        TelescopeSelection = { fg = c.base0D, bg = c.base02 },
+        TelescopeSelectionCaret = { fg = c.base0D, bg = c.base02 },
+        TelescopeMultiSelection = { fg = c.base0E, bg = c.base02 },
         
         -- Prompts
         TelescopePromptPrefix = { fg = c.base08 },

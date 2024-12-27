@@ -47,7 +47,7 @@
           -- Editor
           Cursor = { fg = colors.base00, bg = colors.base05 },
           CursorLine = { bg = "NONE" },
-          CursorLineNr = { fg = colors.base15, bold = true },
+          CursorLineNr = { fg = colors.base0D, bold = true },
           LineNr = { fg = colors.base03 },
           SignColumn = { fg = colors.base03, bg = "NONE" },
           ColorColumn = { bg = colors.base01 },
@@ -65,7 +65,7 @@
           -- Statusline
           StatusLine = { fg = colors.base05, bg = "NONE" },
           StatusLineNC = { fg = colors.base03, bg = "NONE" },
-          WinBar = { fg = colors.base15, bg = "NONE", bold = true },
+          WinBar = { fg = colors.base0D, bg = "NONE", bold = true },
           WinBarNC = { fg = colors.base03, bg = "NONE" },
           
           -- Sidebar
