@@ -13,25 +13,25 @@
     base07 = "#f1f1f0";  # Light Background
 
     # Regular colors
-    base08 = "#ff5487";  # Bright Red (Variables, XML Tags)
-    base09 = "#ff8a47";  # Lush Orange (Constants, XML Attributes)
-    base0A = "#ffda6a";  # Rich Yellow (Classes, Markup Bold)
-    base0B = "#7fff8d";  # Soft Green (Strings)
-    base0C = "#4ccefe";  # Bright Cyan
-    base0D = "#5497ff";  # Pale Blue (Functions, Methods)
-    base0E = "#ba7aff";  # Subtle Purple (Keywords, Storage)
-    base0F = "#816bff";  # Cool Indigo for Deprecated elements
+    base08 = "#ff5487";  # Red (Variables, XML Tags)
+    base09 = "#54ff80";  # Green (Numbers, Boolean)
+    base0A = "#ffda6a";  # Yellow (Classes, Markup Bold)
+    base0B = "#6682ff";  # Blue (Strings)
+    base0C = "#eb6aff";  # Magenta (Support, Regular Expressions)
+    base0D = "#4ccefe";  # Cyan (Functions, Methods)
+    base0E = "#eb6aff";  # Magenta (Keywords)
+    base0F = "#4ccefe";  # Cyan (Deprecated Elements)
 
     # Shadows darker than base00
     base10 = "#08060e";  # Darker Background
     base11 = "#050307";  # Darkest Background
 
     # Bright colors (Adjusted for higher luminosity and softness)
-    base12 = "#ff7fa2";  # Soft Bright Red
-    base13 = "#ffe294";  # Soft Yellow
-    base14 = "#9ef2ae";  # Light Green
-    base15 = "#83dfff";  # Bright Cyan
-    base16 = "#a3bcff";  # Icy Blue
-    base17 = "#e6b3ff";  # Pastel Purple
+    base12 = "#ff6593";  # Bright Red
+    base13 = "#77ff9a";  # Bright Green
+    base14 = "#ffe188";  # Bright Yellow
+    base15 = "#8399ff";  # Bright Blue
+    base16 = "#f08eff";  # Bright Magenta
+    base17 = "#74d9fe";  # Bright Cyan
   };
 }
