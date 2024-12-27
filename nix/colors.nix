@@ -13,14 +13,14 @@
     base07 = "#f1f1f0";  # Light Background
 
     # Regular colors
-    base08 = "#ff5487";  # Red (Variables, XML Tags)
-    base09 = "#54ff80";  # Green (Numbers, Boolean)
-    base0A = "#ffda6a";  # Yellow (Classes, Markup Bold)
-    base0B = "#6682ff";  # Blue (Strings)
-    base0C = "#eb6aff";  # Magenta (Support, Regular Expressions)
-    base0D = "#4ccefe";  # Cyan (Functions, Methods)
-    base0E = "#eb6aff";  # Magenta (Keywords)
-    base0F = "#4ccefe";  # Cyan (Deprecated Elements)
+    base08 = "#ff5487";  # Red (Classes, Types)
+    base09 = "#54ff80";  # Green (Commands, Operations)
+    base0A = "#ffda6a";  # Yellow (Properties, Fields)
+    base0B = "#816bff";  # Indigo (Strings, Content)
+    base0C = "#4ccefe";  # Cyan (Functions, Methods)
+    base0D = "#6682ff";  # Blue (Keywords, Important UI)
+    base0E = "#eb6aff";  # Magenta (Special syntax)
+    base0F = "#4ccefe";  # Cyan Alt (Folders, Navigation)
 
     # Shadows darker than base00
     base10 = "#08060e";  # Darker Background

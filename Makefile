@@ -3,7 +3,6 @@
 # Remove existing Lua files and build artifacts
 clean:
 	rm -rf lua/
-	rm result
 
 # Build the theme
 build:

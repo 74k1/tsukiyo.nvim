@@ -5,61 +5,63 @@ return function(c, bg)
         ["@error"] = { fg = c.base08 },
         ["@preproc"] = { fg = c.base0E },
         ["@define"] = { fg = c.base0E },
-        ["@operator"] = { fg = c.base05 },
+        
+        -- Commands and operations (Green)
+        ["@keyword.operator"] = { fg = c.base09 },
+        ["@operator"] = { fg = c.base09 },
         
         -- Punctuation
         ["@punctuation.delimiter"] = { fg = c.base05 },
         ["@punctuation.bracket"] = { fg = c.base05 },
         ["@punctuation.special"] = { fg = c.base0F },
         
-        -- Literals
+        -- Literals (Indigo for strings)
         ["@string"] = { fg = c.base0B },
-        ["@string.regex"] = { fg = c.base0C },
-        ["@string.escape"] = { fg = c.base0C },
-        ["@string.special"] = { fg = c.base0C },
+        ["@string.regex"] = { fg = c.base0B },
+        ["@string.escape"] = { fg = c.base0E },
+        ["@string.special"] = { fg = c.base0E },
         
         ["@character"] = { fg = c.base0B },
-        ["@character.special"] = { fg = c.base0C },
+        ["@character.special"] = { fg = c.base0E },
         
         ["@boolean"] = { fg = c.base09 },
         ["@number"] = { fg = c.base09 },
         ["@float"] = { fg = c.base09 },
         
-        -- Functions
-        ["@function"] = { fg = c.base0D },
-        ["@function.builtin"] = { fg = c.base0D },
-        ["@function.call"] = { fg = c.base0D },
+        -- Functions (Cyan)
+        ["@function"] = { fg = c.base0C },
+        ["@function.builtin"] = { fg = c.base0C },
+        ["@function.call"] = { fg = c.base0C },
         ["@function.macro"] = { fg = c.base08 },
         
-        ["@method"] = { fg = c.base0D },
-        ["@method.call"] = { fg = c.base0D },
+        ["@method"] = { fg = c.base0C },
+        ["@method.call"] = { fg = c.base0C },
         
-        ["@constructor"] = { fg = c.base0C },
+        ["@constructor"] = { fg = c.base08 },
         ["@parameter"] = { fg = c.base08, italic = true },
         
-        -- Keywords
-        ["@keyword"] = { fg = c.base0E },
-        ["@keyword.function"] = { fg = c.base0E },
-        ["@keyword.operator"] = { fg = c.base0E },
-        ["@keyword.return"] = { fg = c.base0E },
+        -- Keywords (Blue)
+        ["@keyword"] = { fg = c.base0D },
+        ["@keyword.function"] = { fg = c.base0D },
+        ["@keyword.return"] = { fg = c.base0D },
         
-        ["@conditional"] = { fg = c.base0E },
-        ["@repeat"] = { fg = c.base0E },
+        ["@conditional"] = { fg = c.base0D },
+        ["@repeat"] = { fg = c.base0D },
         ["@debug"] = { fg = c.base08 },
         ["@label"] = { fg = c.base0A },
         ["@include"] = { fg = c.base0A },
         ["@exception"] = { fg = c.base08 },
         
-        -- Types
-        ["@type"] = { fg = c.base0A },
-        ["@type.builtin"] = { fg = c.base0A },
+        -- Types (Red, used sparingly)
+        ["@type"] = { fg = c.base08 },
+        ["@type.builtin"] = { fg = c.base08 },
         ["@type.qualifier"] = { fg = c.base0A },
         ["@type.definition"] = { fg = c.base0A },
         
         ["@storageclass"] = { fg = c.base0A },
         ["@attribute"] = { fg = c.base0A },
-        ["@field"] = { fg = c.base08 },
-        ["@property"] = { fg = c.base08 },
+        ["@field"] = { fg = c.base0A },
+        ["@property"] = { fg = c.base0A },
         
         -- Identifiers
         ["@variable"] = { fg = c.base05 },

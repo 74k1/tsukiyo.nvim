@@ -3,8 +3,8 @@
   cat > $out/lua/tsukiyo/highlights/plugins/oil.lua << 'EOFOIL'
   return function(c, bg)
       return {
-          OilDir = { fg = c.base0D },
-          OilDirIcon = { fg = c.base0D },
+          OilDir = { fg = c.base0F },
+          OilDirIcon = { fg = c.base0F },
           OilLink = { fg = c.base0C },
           OilLinkTarget = { fg = c.base0C, italic = true },
           OilCopy = { fg = c.base0A },
