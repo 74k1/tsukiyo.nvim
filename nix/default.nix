@@ -15,6 +15,7 @@ let
     oil = import ./plugins/oil.nix { inherit colors; };
     telescope = import ./plugins/telescope.nix { inherit colors; };
     treesitter = import ./plugins/treesitter.nix { inherit colors; };
+    fidget = import ./plugins/fidget.nix { inherit colors; };
   };
 
   # Create a script that generates all the files
@@ -51,6 +52,7 @@ let
     ${pluginFiles.oil}
     ${pluginFiles.telescope}
     ${pluginFiles.treesitter}
+    ${pluginFiles.fidget}
   '';
 in {
   perSystem = { pkgs, ... }: {
