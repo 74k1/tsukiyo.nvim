@@ -1,4 +1,5 @@
-{ colors }:
+{ colors }: 
+/* bash */
 ''
 cat > $out/lua/tsukiyo/highlights/plugins/indent-blankline.lua <<'EOF'
 return function(c, bg)

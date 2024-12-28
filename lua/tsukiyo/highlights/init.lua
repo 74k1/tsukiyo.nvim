@@ -140,6 +140,7 @@ M.setup = function(colors, bg)
         require('tsukiyo.highlights.plugins.lsp'),
         require('tsukiyo.highlights.plugins.oil'),
         require('tsukiyo.highlights.plugins.telescope'),
+        require('tsukiyo.highlights.plugins.fidget'),
         require('tsukiyo.highlights.plugins.treesitter'),
     }
 
