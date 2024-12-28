@@ -6,9 +6,7 @@ clean:
 
 # Build the theme
 build:
-	nix build .#generator
-	./result/bin/generate-lua
-	unlink result
+	nix run .#generator
 
 # Clean and rebuild
 rebuild: clean build

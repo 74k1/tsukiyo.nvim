@@ -4,16 +4,16 @@
   return function(c, bg)
       return {
           -- Borders
-          TelescopeBorder = { fg = c.base0D, bg = c.base10 },
-          TelescopePromptBorder = { fg = c.base0D, bg = c.base11 },
-          TelescopeResultsBorder = { fg = c.base0D, bg = c.base10 },
-          TelescopePreviewBorder = { fg = c.base0D, bg = c.base10 },
+          TelescopeBorder = { fg = c.base0D, bg = "NONE" },
+          TelescopePromptBorder = { fg = c.base0D, bg = "NONE" },
+          TelescopeResultsBorder = { fg = c.base0D, bg = "NONE" },
+          TelescopePreviewBorder = { fg = c.base0D, bg = "NONE" },
           
           -- Normal text
-          TelescopeNormal = { fg = c.base05, bg = c.base10 },
-          TelescopePromptNormal = { fg = c.base05, bg = c.base11 },
-          TelescopeResultsNormal = { fg = c.base05, bg = c.base10 },
-          TelescopePreviewNormal = { fg = c.base05, bg = c.base10 },
+          TelescopeNormal = { fg = c.base05, bg = "NONE" },
+          TelescopePromptNormal = { fg = c.base05, bg = "NONE" },
+          TelescopeResultsNormal = { fg = c.base05, bg = "NONE" },
+          TelescopePreviewNormal = { fg = c.base05, bg = "NONE" },
           
           -- Selection
           TelescopeSelection = { fg = c.base0D, bg = c.base02 },
