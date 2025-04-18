@@ -28,7 +28,7 @@ let
     cat > $out/colors/tsukiyo.vim <<EOF
     " Vim color file
     " Maintainer: 74k1
-    " Last Change: 2024
+    " Last Change: 2025
     
     set background=dark
     highlight clear
@@ -66,7 +66,7 @@ in {
     # For distribution as a vim plugin
     packages.default = pkgs.vimUtils.buildVimPlugin {
       pname = "tsukiyo-nvim";
-      version = "0.1.0";
+      version = "0.2.0";
       src = ./..;
 
       preBuild = builtins.replaceStrings ["$out"] ["."] generateFiles;
