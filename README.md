@@ -1,6 +1,6 @@
 # yueye.nvim
 
-The YueYe colorscheme for Neovim, elegantly crafted using Nix.
+The [YueYe](https://github.com/74k1/yueye) colorscheme for Neovim, elegantly crafted using Nix.
 
 ## Features
 
