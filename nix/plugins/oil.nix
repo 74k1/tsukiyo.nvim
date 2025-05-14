@@ -1,6 +1,6 @@
 { colors }:
 ''
-  cat > $out/lua/tsukiyo/highlights/plugins/oil.lua << 'EOFOIL'
+  cat > $out/lua/yueye/highlights/plugins/oil.lua << 'EOFOIL'
   return function(c, bg)
       return {
           OilDir = { fg = c.base0F },

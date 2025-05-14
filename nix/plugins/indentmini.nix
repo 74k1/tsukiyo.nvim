@@ -1,6 +1,6 @@
 { colors }:
 ''
-cat > $out/lua/tsukiyo/highlights/plugins/indentmini.lua <<'EOF'
+cat > $out/lua/yueye/highlights/plugins/indentmini.lua <<'EOF'
 return function(c, bg)
     return {
         IndentMiniLine = { fg = c.base02 },             -- Normal indentation line

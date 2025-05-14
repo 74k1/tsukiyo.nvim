@@ -1,6 +1,6 @@
 { colors }:
 ''
-  cat > $out/lua/tsukiyo/highlights/plugins/treesitter.lua << 'EOFTREE'
+  cat > $out/lua/yueye/highlights/plugins/treesitter.lua << 'EOFTREE'
   return function(c, bg)
       return {
           -- Misc

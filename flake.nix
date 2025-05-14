@@ -1,5 +1,5 @@
 {
-  description = "Tsukiyo - A Base24 Neovim colorscheme";
+  description = "The YueYe Colorscheme for Neovim";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";

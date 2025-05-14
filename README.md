@@ -1,10 +1,10 @@
-# Tsukiyo.nvim
+# yueye.nvim
 
-A neat Base24 colorscheme for Neovim, elegantly crafted using Nix.
+The YueYe colorscheme for Neovim, elegantly crafted using Nix.
 
 ## Features
 
-- Base24 color palette implementation
+- YueYe color palette implementation
 - Built with Nix for reproducible builds
 - Optimized for Neovim
 
@@ -13,7 +13,7 @@ A neat Base24 colorscheme for Neovim, elegantly crafted using Nix.
 **Using Lazy.nvim**
 ```lua
 {
-    "74k1/tsukiyo.nvim",
+    "74k1/yueye.nvim",
     lazy = false,
     priority = 1000,
 }
@@ -21,7 +21,7 @@ A neat Base24 colorscheme for Neovim, elegantly crafted using Nix.
 
 **Using Packer**
 ```lua
-use "74k1/tsukiyo.nvim"
+use "74k1/yueye.nvim"
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ use "74k1/tsukiyo.nvim"
 Add to your Neovim configuration:
 
 ```lua
-vim.cmd[[colorscheme tsukiyo]]
+vim.cmd[[colorscheme yueye]]
 ```
 
 ## Requirements

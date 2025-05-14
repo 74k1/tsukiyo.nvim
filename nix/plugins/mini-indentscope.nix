@@ -1,6 +1,6 @@
 { colors }:
 ''
-cat > $out/lua/tsukiyo/highlights/plugins/mini-indentscope.lua <<'EOF'
+cat > $out/lua/yueye/highlights/plugins/mini-indentscope.lua <<'EOF'
 return function(c, bg)
     return {
         -- mini.indentscope

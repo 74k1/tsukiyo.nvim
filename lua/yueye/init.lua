@@ -5,11 +5,11 @@ M.setup = function(opts)
         transparent = false,
     }, opts or {})
 
-    local colors = require('tsukiyo.colors')
+    local colors = require('yueye.colors')
     local bg = opts.transparent and "NONE" or colors.base00
     
     -- Load and apply highlights
-    local highlights = require('tsukiyo.highlights').setup(colors, bg)
+    local highlights = require('yueye.highlights').setup(colors, bg)
 
     -- Clear existing highlights
     vim.cmd('highlight clear')
@@ -18,7 +18,7 @@ M.setup = function(opts)
     end
     
     vim.o.termguicolors = true
-    vim.g.colors_name = 'tsukiyo'
+    vim.g.colors_name = 'yueye'
 
     -- Set highlights
     for group, settings in pairs(highlights) do

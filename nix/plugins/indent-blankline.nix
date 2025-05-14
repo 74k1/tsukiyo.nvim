@@ -1,7 +1,7 @@
 { colors }: 
 /* bash */
 ''
-cat > $out/lua/tsukiyo/highlights/plugins/indent-blankline.lua <<'EOF'
+cat > $out/lua/yueye/highlights/plugins/indent-blankline.lua <<'EOF'
 return function(c, bg)
     return {
         -- indent-blankline.nvim

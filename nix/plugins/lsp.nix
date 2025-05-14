@@ -1,6 +1,6 @@
 { colors }:
 ''
-  cat > $out/lua/tsukiyo/highlights/plugins/lsp.lua << 'EOFLSP'
+  cat > $out/lua/yueye/highlights/plugins/lsp.lua << 'EOFLSP'
   return function(c, bg)
       return {
           -- Diagnostics

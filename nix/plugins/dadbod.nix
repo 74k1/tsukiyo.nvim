@@ -1,6 +1,6 @@
 { colors }:
 ''
-  cat > $out/lua/tsukiyo/highlights/plugins/dadbod.lua << 'EOFDAD'
+  cat > $out/lua/yueye/highlights/plugins/dadbod.lua << 'EOFDAD'
   return function(c, bg)
       return {
           -- Main UI

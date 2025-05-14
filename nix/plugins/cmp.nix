@@ -1,6 +1,6 @@
 { colors }:
 ''
-  cat > $out/lua/tsukiyo/highlights/plugins/cmp.lua << 'EOFCMP'
+  cat > $out/lua/yueye/highlights/plugins/cmp.lua << 'EOFCMP'
   return function(c, bg)
       return {
           CmpItemAbbr = { fg = c.base05 },

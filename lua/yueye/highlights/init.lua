@@ -132,16 +132,16 @@ M.setup = function(colors, bg)
 
     -- Load plugin highlights
     local plugin_groups = {
-        require('tsukiyo.highlights.plugins.cmp'),
-        require('tsukiyo.highlights.plugins.dadbod'),
-        require('tsukiyo.highlights.plugins.indent-blankline'),
-        require('tsukiyo.highlights.plugins.indentmini'),
-        require('tsukiyo.highlights.plugins.mini-indentscope'),
-        require('tsukiyo.highlights.plugins.lsp'),
-        require('tsukiyo.highlights.plugins.oil'),
-        require('tsukiyo.highlights.plugins.telescope'),
-        require('tsukiyo.highlights.plugins.fidget'),
-        require('tsukiyo.highlights.plugins.treesitter'),
+        require('yueye.highlights.plugins.cmp'),
+        require('yueye.highlights.plugins.dadbod'),
+        require('yueye.highlights.plugins.indent-blankline'),
+        require('yueye.highlights.plugins.indentmini'),
+        require('yueye.highlights.plugins.mini-indentscope'),
+        require('yueye.highlights.plugins.lsp'),
+        require('yueye.highlights.plugins.oil'),
+        require('yueye.highlights.plugins.telescope'),
+        require('yueye.highlights.plugins.fidget'),
+        require('yueye.highlights.plugins.treesitter'),
     }
 
     -- Merge plugin highlights

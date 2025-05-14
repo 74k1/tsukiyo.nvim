@@ -1,6 +1,6 @@
 { colors }:
 ''
-  cat > $out/lua/tsukiyo/highlights/plugins/telescope.lua << 'EOFTELE'
+  cat > $out/lua/yueye/highlights/plugins/telescope.lua << 'EOFTELE'
   return function(c, bg)
       return {
           -- Borders
