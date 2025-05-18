@@ -16,6 +16,7 @@
         devShells.default = pkgs.mkShell {
           packages = with pkgs; [
             gnumake
+            just
             luajit
             luajitPackages.luacheck
             stylua

@@ -36,11 +36,12 @@ vim.cmd[[colorscheme yueye]]
 
 - Neovim >= 0.8.0
 - Nix (for building from source)
+- [`just`](https://github.com/casey/just)
 
 ## Building from Source
 
 ```bash
-make build
+just
 ```
 
 ## Contributing
