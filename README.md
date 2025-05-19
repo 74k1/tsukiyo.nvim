@@ -1,6 +1,8 @@
 # yueye.nvim
 
-The [YueYe](https://github.com/74k1/yueye) colorscheme for Neovim, elegantly crafted using Nix.
+The [YueYe](https://github.com/74k1/yueye) colorscheme for Neovim.
+
+Greatly inspired by [nyoom-engineering/oxocarbon](https://github.com/nyoom-engineering/oxocarbon.nvim). ❤️
 
 ## Features
 
@@ -30,18 +32,6 @@ Add to your Neovim configuration:
 
 ```lua
 vim.cmd[[colorscheme yueye]]
-```
-
-## Requirements
-
-- Neovim >= 0.8.0
-- Nix (for building from source)
-- [`just`](https://github.com/casey/just)
-
-## Building from Source
-
-```bash
-just
 ```
 
 ## Contributing

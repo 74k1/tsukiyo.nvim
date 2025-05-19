@@ -1,156 +1,153 @@
 local M = {}
 
-M.setup = function(colors, bg)
+M.setup = function(yy)
     -- Core highlighting
     local highlights = {
-        Normal = { fg = colors.base05, bg = "NONE" },
-        NormalFloat = { fg = colors.base05, bg = "NONE" },
-        NormalNC = { fg = colors.base05, bg = "NONE" },
+        Normal = { fg = yy.fg01, bg = yy.bg00 },
+        NormalFloat = { fg = yy.fg00, bg = yy.fg02 },
+        NormalNC = { fg = yy.fg03, bg = yy.bg00 },
         
         -- Editor
-        Cursor = { fg = colors.base00, bg = colors.base05 },
-        CursorLine = { bg = "NONE" },
-        CursorLineNr = { fg = colors.base0D, bold = true },
-        LineNr = { fg = colors.base03 },
-        SignColumn = { fg = colors.base03, bg = "NONE" },
-        ColorColumn = { bg = colors.base01 },
-        VertSplit = { fg = colors.base02, bg = "NONE" },
-        Folded = { fg = colors.base03, italic = true },
-        FoldColumn = { fg = colors.base03, bg = "NONE" },
+        Cursor = { fg = yy.bg00, bg = yy.fg01 },
+        CursorLine = { fg = yy.none, bg = yy.bg01 },
+        CursorLineNr = { fg = yy.fg01, bg = yy.none },
+        LineNr = { fg = yy.fg03, bg = yy.bg00 },
+        SignColumn = { fg = yy.bg01, bg = yy.bg00 },
+        ColorColumn = { fg = yy.none, bg = yy.bg01 },
+        VertSplit = { fg = yy.bg02, bg = yy.bg00 },
+        Folded = { fg = yy.bg02, bg = yy.bg01, italic = true },
+        FoldColumn = { fg = yy.bg01, bg = yy.bg00 },
         
         -- Selection
-        Visual = { bg = colors.base02 },
-        VisualNOS = { bg = colors.base02 },
-        Search = { fg = colors.base00, bg = colors.base0A },
-        IncSearch = { fg = colors.base00, bg = colors.base09 },
-        CurSearch = { fg = colors.base00, bg = colors.base0A },
+        Visual = { fg = yy.none, bg = yy.bg02 },
+        VisualNOS = { fg = yy.none, bg = yy.bg02 },
+        Search = { fg = yy.bg01, bg = yy.base04 },
+        IncSearch = { fg = yy.fg00, bg = yy.base06 },
         
         -- Statusline
-        StatusLine = { fg = colors.base05, bg = "NONE" },
-        StatusLineNC = { fg = colors.base03, bg = "NONE" },
-        WinBar = { fg = colors.base0D, bg = "NONE", bold = true },
-        WinBarNC = { fg = colors.base03, bg = "NONE" },
+        StatusLine = { fg = yy.fg03, bg = yy.bg00 },
+        StatusLineNC = { fg = yy.fg03, bg = yy.bg01 },
         
         -- Sidebar
-        PMenu = { fg = colors.base05, bg = colors.base01 },
-        PMenuSel = { fg = colors.base00, bg = colors.base0D },
-        PMenuSBar = { bg = colors.base02 },
-        PMenuThumb = { bg = colors.base04 },
+        PMenu = { fg = yy.fg03, bg = yy.bg01 },
+        PMenuSel = { fg = yy.base04, bg = yy.bg02 },
+        PMenuSbar = { fg = yy.fg03, bg = yy.bg01 },
+        PMenuThumb = { fg = yy.base04, bg = yy.bg02 },
         
         -- Messages
-        ErrorMsg = { fg = colors.base08, bold = true },
-        WarningMsg = { fg = colors.base0A, bold = true },
-        MoreMsg = { fg = colors.base0B },
-        Question = { fg = colors.base0D },
-        Directory = { fg = colors.base0D },
+        ErrorMsg = { fg = yy.base08, bg = yy.none, bold = true },
+        ModeMsg = { fg = yy.fg03, bg = yy.none},
+        Substitute = { fg = yy.bg01, bg = yy.base04 },
+        WildMenu = { fg = yy.base04, bg = yy.bg01 },
+        WarningMsg = { fg = yy.base03, bg = yy.none, bold = true },
+        MoreMsg = { fg = yy.base04, bg = yy.none },
+        Question = { fg = yy.fg03, bg = yy.none },
+        Directory = { fg = yy.base04, bg = yy.none },
         
         -- Syntax
-        Comment = { fg = colors.base03, italic = true },
-        NonText = { fg = colors.base03 },
-        SpecialKey = { fg = colors.base03 },
-        Whitespace = { fg = colors.base02 },
+        Comment = { fg = yy.bg03, bg = yy.none, italic = true },
+        NonText = { fg = yy.bg02, bg = yy.none },
+        SpecialKey = { fg = yy.bg03, bg = yy.none },
         
-        Constant = { fg = colors.base09 },
-        String = { fg = colors.base0B },
-        Character = { fg = colors.base0B },
-        Number = { fg = colors.base09 },
-        Boolean = { fg = colors.base09 },
-        Float = { fg = colors.base09 },
+        Constant = { fg = yy.fg03, bg = yy.none },
+        String = { fg = yy.base02, bg = yy.none },
+        Character = { fg = yy.base02, bg = yy.none },
+        Number = { fg = yy.base06, bg = yy.none },
+        Boolean = { fg = yy.base05, bg = yy.none },
+        Float = { link = "Number" },
         
-        Identifier = { fg = colors.base08 },
-        Function = { fg = colors.base0D },
+        Function = { fg = yy.base04, bg = yy.none },
+        Identifier = { fg = yy.fg03, bg = yy.none },
         
-        Statement = { fg = colors.base0E },
-        Conditional = { fg = colors.base0E },
-        Repeat = { fg = colors.base0E },
-        Label = { fg = colors.base0E },
-        Operator = { fg = colors.base05 },
-        Keyword = { fg = colors.base0E },
-        Exception = { fg = colors.base08 },
+        Statement = { fg = yy.base06, bg = yy.none },
+        Conditional = { fg = yy.base06, bg = yy.none },
+        Repeat = { fg = yy.base06, bg = yy.none },
+        Label = { fg = yy.base06, bg = yy.none },
+        Operator = { fg = yy.base06, bg = yy.none },
+        Keyword = { fg = yy.base06, bg = yy.none },
+        Exception = { fg = yy.base06, bg = yy.none },
         
-        PreProc = { fg = colors.base0A },
-        Include = { fg = colors.base0A },
-        Define = { fg = colors.base0E },
-        Macro = { fg = colors.base08 },
-        PreCondit = { fg = colors.base0A },
+        PreProc = { fg = yy.base06, bg = yy.none },
+        Include = { fg = yy.base06, bg = yy.none },
+        Define = { fg = yy.base06, bg = yy.none },
+        Macro = { fg = yy.base12, bg = yy.none },
         
-        Type = { fg = colors.base0A },
-        StorageClass = { fg = colors.base0A },
-        Structure = { fg = colors.base0A },
-        Typedef = { fg = colors.base0A },
+        Type = { fg = yy.base06, bg = yy.none },
+        StorageClass = { fg = yy.base06, bg = yy.none },
+        Structure = { fg = yy.base06, bg = yy.none },
+        Tag = { fg = yy.fg03, bg = yy.none },
+        Todo = { fg = yy.base11, bg = yy.none },
+        Typedef = { fg = yy.base06, bg = yy.none },
         
-        Special = { fg = colors.base0C },
-        SpecialChar = { fg = colors.base0C },
-        Tag = { fg = colors.base0A },
-        Delimiter = { fg = colors.base05 },
-        SpecialComment = { fg = colors.base03, italic = true },
-        Debug = { fg = colors.base08 },
+        Special = { fg = yy.fg03, bg = yy.none },
+        SpecialChar = { fg = yy.fg03, bg = yy.none },
+        Tag = { fg = yy.base04, bg = yy.none },
+        SpecialComment = { fg = yy.base04, bg = yy.none, italic = true },
+        Debug = { fg = yy.base11, bg = yy.none },
         
         -- Diffs
-        DiffAdd = { fg = colors.base0B, bg = "NONE" },
-        DiffChange = { fg = colors.base0E, bg = "NONE" },
-        DiffDelete = { fg = colors.base08, bg = "NONE" },
-        DiffText = { fg = colors.base0D, bg = "NONE" },
+        DiffAdded = { fg = yy.base02, bg = yy.none },
+        DiffChanged = { fg = yy.base03, bg = yy.none },
+        DiffRemoved = { fg = yy.base01, bg = yy.none },
+        DiffAdd = { fg = yy.base02, bg = yy.none },
+        DiffChange = { fg = yy.base03, bg = yy.none },
+        DiffDelete = { fg = yy.base01 , bg = yy.none },
+        DiffText = { fg = yy.fg02 , bg = yy.none },
         
         -- Spellchecking
-        SpellBad = { sp = colors.base08, undercurl = true },
-        SpellCap = { sp = colors.base0A, undercurl = true },
-        SpellRare = { sp = colors.base0C, undercurl = true },
-        SpellLocal = { sp = colors.base0D, undercurl = true },
+        SpellBad = { sp = yy.base01, undercurl = true },
+        SpellCap = { sp = yy.base03, undercurl = true },
+        SpellRare = { sp = yy.base06, undercurl = true },
+        SpellLocal = { sp = yy.base04, undercurl = true },
         
         -- Floating windows
-        FloatBorder = { fg = colors.base0D, bg = "NONE" },
-        FloatTitle = { fg = colors.base0D, bold = true },
+        FloatBorder = { fg = yy.fg02, bg = yy.fg02 },
+        -- FloatTitle = { fg = yy.base04, bold = true },
         
         -- Misc
-        Title = { fg = colors.base0D, bold = true },
-        Bold = { bold = true },
-        Italic = { italic = true },
-        Underlined = { fg = colors.base0C, underline = true },
+        Text = { fg = yy.fg03, bg = yy.none, bold = true },
+        Bold = { fg = yy.none, bg = yy.none, bold = true },
+        Italic = { fg = yy.none, bg = yy.none, italic = true },
+        Underlined = { fg = yy.none, bg = yy.none, underline = true },
         
         -- Git signs
-        GitSignsAdd = { fg = colors.base0B, bg = "NONE" },
-        GitSignsChange = { fg = colors.base0E, bg = "NONE" },
-        GitSignsDelete = { fg = colors.base08, bg = "NONE" },
+        -- GitSignsAdd = { fg = yy.base02, bg = "NONE" },
+        -- GitSignsChange = { fg = yy.base03, bg = "NONE" },
+        -- GitSignsDelete = { fg = yy.base01, bg = "NONE" },
         
         -- Diagnostics
-        DiagnosticError = { fg = colors.base08 },
-        DiagnosticWarn = { fg = colors.base0A },
-        DiagnosticInfo = { fg = colors.base0D },
-        DiagnosticHint = { fg = colors.base0C },
-        
-        DiagnosticSignError = { fg = colors.base08, bg = "NONE" },
-        DiagnosticSignWarn = { fg = colors.base0A, bg = "NONE" },
-        DiagnosticSignInfo = { fg = colors.base0D, bg = "NONE" },
-        DiagnosticSignHint = { fg = colors.base0C, bg = "NONE" },
+        DiagnosticError = { fg = yy.base01, bg = yy.none },
+        DiagnosticWarn = { fg = yy.base02, bg = yy.none },
+        DiagnosticInfo = { fg = yy.base12, bg = yy.none },
+        DiagnosticHint = { fg = yy.fg03, bg = yy.none },
         
         -- Tabs
-        TabLine = { fg = colors.base03, bg = "NONE" },
-        TabLineFill = { fg = colors.base03, bg = "NONE" },
-        TabLineSel = { fg = colors.base05, bg = "NONE", bold = true },
+        TabLine = { link = "StatusLineNC" },
+        TabLineFill = { link = "TabLine" },
+        TabLineSel = { link = "StatusLine" },
     }
 
     -- Load plugin highlights
-    local plugin_groups = {
-        require('yueye.highlights.plugins.cmp'),
-        require('yueye.highlights.plugins.dadbod'),
-        require('yueye.highlights.plugins.indent-blankline'),
-        require('yueye.highlights.plugins.indentmini'),
-        require('yueye.highlights.plugins.mini-indentscope'),
-        require('yueye.highlights.plugins.lsp'),
-        require('yueye.highlights.plugins.oil'),
-        require('yueye.highlights.plugins.telescope'),
-        require('yueye.highlights.plugins.fidget'),
-        require('yueye.highlights.plugins.treesitter'),
-    }
+    -- local plugin_groups = {
+    --     require('yueye.highlights.plugins.cmp'),
+    --     require('yueye.highlights.plugins.dadbod'),
+    --     require('yueye.highlights.plugins.indent-blankline'),
+    --     require('yueye.highlights.plugins.indentmini'),
+    --     require('yueye.highlights.plugins.mini-indentscope'),
+    --     require('yueye.highlights.plugins.lsp'),
+    --     require('yueye.highlights.plugins.oil'),
+    --     require('yueye.highlights.plugins.telescope'),
+    --     require('yueye.highlights.plugins.fidget'),
+    --     require('yueye.highlights.plugins.treesitter'),
+    -- }
 
     -- Merge plugin highlights
-    for _, group in ipairs(plugin_groups) do
-        local plugin_hl = group(colors, bg)
-        for hl_group, hl_settings in pairs(plugin_hl) do
-            highlights[hl_group] = hl_settings
-        end
-    end
+    -- for _, group in ipairs(plugin_groups) do
+    --     local plugin_hl = group(colors, bg)
+    --     for hl_group, hl_settings in pairs(plugin_hl) do
+    --         highlights[hl_group] = hl_settings
+    --     end
+    -- end
 
     return highlights
 end
